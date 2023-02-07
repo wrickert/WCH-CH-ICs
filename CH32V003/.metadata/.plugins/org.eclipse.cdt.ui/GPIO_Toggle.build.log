@@ -1,0 +1,140 @@
+07:54:20 **** Build of configuration obj for project GPIO_Toggle ****
+make -j16 all 
+Building file: ../User/ch32v00x_it.c
+Building file: ../User/main.c
+Building file: ../User/system_ch32v00x.c
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Startup/startup_ch32v00x.S
+Invoking: GNU RISC-V Cross C Compiler
+Invoking: GNU RISC-V Cross C Compiler
+Invoking: GNU RISC-V Cross C Compiler
+Invoking: GNU RISC-V Cross Assembler
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"User/ch32v00x_it.d" -MT"User/ch32v00x_it.o" -c -o "User/ch32v00x_it.o" "../User/ch32v00x_it.c"
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"User/main.d" -MT"User/main.o" -c -o "User/main.o" "../User/main.c"
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_adc.c
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"User/system_ch32v00x.d" -MT"User/system_ch32v00x.o" -c -o "User/system_ch32v00x.o" "../User/system_ch32v00x.c"
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -x assembler-with-cpp -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Startup" -MMD -MP -MF"Startup/startup_ch32v00x.d" -MT"Startup/startup_ch32v00x.o" -c -o "Startup/startup_ch32v00x.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Startup/startup_ch32v00x.S"
+Invoking: GNU RISC-V Cross C Compiler
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_dbgmcu.c
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_adc.d" -MT"Peripheral/src/ch32v00x_adc.o" -c -o "Peripheral/src/ch32v00x_adc.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_adc.c"
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_dma.c
+Invoking: GNU RISC-V Cross C Compiler
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_dbgmcu.d" -MT"Peripheral/src/ch32v00x_dbgmcu.o" -c -o "Peripheral/src/ch32v00x_dbgmcu.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_dbgmcu.c"
+Invoking: GNU RISC-V Cross C Compiler
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_exti.c
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_dma.d" -MT"Peripheral/src/ch32v00x_dma.o" -c -o "Peripheral/src/ch32v00x_dma.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_dma.c"
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_flash.c
+Invoking: GNU RISC-V Cross C Compiler
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_exti.d" -MT"Peripheral/src/ch32v00x_exti.o" -c -o "Peripheral/src/ch32v00x_exti.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_exti.c"
+Invoking: GNU RISC-V Cross C Compiler
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_flash.d" -MT"Peripheral/src/ch32v00x_flash.o" -c -o "Peripheral/src/ch32v00x_flash.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_flash.c"
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_gpio.c
+Invoking: GNU RISC-V Cross C Compiler
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_i2c.c
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_gpio.d" -MT"Peripheral/src/ch32v00x_gpio.o" -c -o "Peripheral/src/ch32v00x_gpio.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_gpio.c"
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_iwdg.c
+Invoking: GNU RISC-V Cross C Compiler
+Invoking: GNU RISC-V Cross C Compiler
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_misc.c
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_i2c.d" -MT"Peripheral/src/ch32v00x_i2c.o" -c -o "Peripheral/src/ch32v00x_i2c.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_i2c.c"
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_iwdg.d" -MT"Peripheral/src/ch32v00x_iwdg.o" -c -o "Peripheral/src/ch32v00x_iwdg.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_iwdg.c"
+Invoking: GNU RISC-V Cross C Compiler
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_misc.d" -MT"Peripheral/src/ch32v00x_misc.o" -c -o "Peripheral/src/ch32v00x_misc.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_misc.c"
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_opa.c
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_pwr.c
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Startup/startup_ch32v00x.S
+Invoking: GNU RISC-V Cross C Compiler
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_rcc.c
+../User/ch32v00x_it.c:14:1: warning: unrecognized argument to 'interrupt' attribute [-Wattributes]
+   14 | void NMI_Handler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
+      | ^~~~
+../User/ch32v00x_it.c:15:1: warning: unrecognized argument to 'interrupt' attribute [-Wattributes]
+   15 | void HardFault_Handler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
+      | ^~~~
+ 
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_opa.d" -MT"Peripheral/src/ch32v00x_opa.o" -c -o "Peripheral/src/ch32v00x_opa.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_opa.c"
+Invoking: GNU RISC-V Cross C Compiler
+Finished building: ../User/ch32v00x_it.c
+Finished building: ../User/main.c
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_pwr.d" -MT"Peripheral/src/ch32v00x_pwr.o" -c -o "Peripheral/src/ch32v00x_pwr.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_pwr.c"
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_iwdg.c
+Invoking: GNU RISC-V Cross C Compiler
+ 
+Finished building: ../User/system_ch32v00x.c
+ 
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_rcc.d" -MT"Peripheral/src/ch32v00x_rcc.o" -c -o "Peripheral/src/ch32v00x_rcc.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_rcc.c"
+ 
+ 
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_spi.c
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_usart.c
+Invoking: GNU RISC-V Cross C Compiler
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_wwdg.c
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_spi.d" -MT"Peripheral/src/ch32v00x_spi.o" -c -o "Peripheral/src/ch32v00x_spi.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_spi.c"
+Invoking: GNU RISC-V Cross C Compiler
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_tim.c
+Invoking: GNU RISC-V Cross C Compiler
+Invoking: GNU RISC-V Cross C Compiler
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_usart.d" -MT"Peripheral/src/ch32v00x_usart.o" -c -o "Peripheral/src/ch32v00x_usart.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_usart.c"
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_exti.c
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_wwdg.d" -MT"Peripheral/src/ch32v00x_wwdg.o" -c -o "Peripheral/src/ch32v00x_wwdg.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_wwdg.c"
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Peripheral/src/ch32v00x_tim.d" -MT"Peripheral/src/ch32v00x_tim.o" -c -o "Peripheral/src/ch32v00x_tim.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_tim.c"
+ 
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug/debug.c
+Building file: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core/core_riscv.c
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_misc.c
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_dbgmcu.c
+Invoking: GNU RISC-V Cross C Compiler
+Invoking: GNU RISC-V Cross C Compiler
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_dma.c
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_gpio.c
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_opa.c
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Debug/debug.d" -MT"Debug/debug.o" -c -o "Debug/debug.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug/debug.c"
+ 
+ 
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/GPIO/GPIO_Toggle/User" -I"/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/inc" -std=gnu99 -MMD -MP -MF"Core/core_riscv.d" -MT"Core/core_riscv.o" -c -o "Core/core_riscv.o" "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core/core_riscv.c"
+ 
+ 
+ 
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_wwdg.c
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_pwr.c
+ 
+ 
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Core/core_riscv.c
+ 
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_adc.c
+ 
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_flash.c
+ 
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Debug/debug.c
+ 
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_i2c.c
+ 
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_spi.c
+ 
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_rcc.c
+ 
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_usart.c
+ 
+Finished building: /home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Peripheral/src/ch32v00x_tim.c
+ 
+Building target: GPIO_Toggle.elf
+Invoking: GNU RISC-V Cross C Linker
+riscv-none-embed-gcc -march=rv32ec -mabi=ilp32e -msmall-data-limit=0 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -T "/home/william/Documents/Projects/WCH CH ICs/CH32V003/EVT/EXAM/SRC/Ld/Link.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"GPIO_Toggle.map" --specs=nano.specs --specs=nosys.specs -o "GPIO_Toggle.elf" ./User/ch32v00x_it.o ./User/main.o ./User/system_ch32v00x.o  ./Startup/startup_ch32v00x.o  ./Peripheral/src/ch32v00x_adc.o ./Peripheral/src/ch32v00x_dbgmcu.o ./Peripheral/src/ch32v00x_dma.o ./Peripheral/src/ch32v00x_exti.o ./Peripheral/src/ch32v00x_flash.o ./Peripheral/src/ch32v00x_gpio.o ./Peripheral/src/ch32v00x_i2c.o ./Peripheral/src/ch32v00x_iwdg.o ./Peripheral/src/ch32v00x_misc.o ./Peripheral/src/ch32v00x_opa.o ./Peripheral/src/ch32v00x_pwr.o ./Peripheral/src/ch32v00x_rcc.o ./Peripheral/src/ch32v00x_spi.o ./Peripheral/src/ch32v00x_tim.o ./Peripheral/src/ch32v00x_usart.o ./Peripheral/src/ch32v00x_wwdg.o  ./Debug/debug.o  ./Core/core_riscv.o   
+Finished building target: GPIO_Toggle.elf
+ 
+Invoking: GNU RISC-V Cross Create Flash Image
+riscv-none-embed-objcopy -O ihex "GPIO_Toggle.elf"  "GPIO_Toggle.hex"
+Invoking: GNU RISC-V Cross Print Size
+riscv-none-embed-size --format=berkeley "GPIO_Toggle.elf"
+Invoking: GNU RISC-V Cross Create Listing
+riscv-none-embed-objdump --all-headers --demangle --disassemble "GPIO_Toggle.elf" > "GPIO_Toggle.lst"
+   text	   data	    bss	    dec	    hex	filename
+   6972	    156	    276	   7404	   1cec	GPIO_Toggle.elf
+Finished building: GPIO_Toggle.siz
+ 
+Finished building: GPIO_Toggle.hex
+ 
+Finished building: GPIO_Toggle.lst
+ 
+
+07:54:21 Build Finished. 0 errors, 2 warnings. (took 464ms)
+
