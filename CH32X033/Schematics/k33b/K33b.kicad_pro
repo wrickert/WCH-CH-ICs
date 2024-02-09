@@ -405,7 +405,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Keeb.kicad_pro",
+    "filename": "K33b.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -430,9 +430,9 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.2032,
+        "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.438,
+        "diff_pair_width": 0.43,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -452,11 +452,11 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "USB Data",
+        "netclass": "Default",
         "pattern": "D+"
       },
       {
-        "netclass": "USB Data",
+        "netclass": "Default",
         "pattern": "D-"
       }
     ]
@@ -508,7 +508,7 @@
   },
   "sheets": [
     [
-      "4e70b831-107e-4f93-8316-6a56583a657f",
+      "df8c1861-9ab6-4ad0-85b7-db66d261f102",
       ""
     ]
   ],
