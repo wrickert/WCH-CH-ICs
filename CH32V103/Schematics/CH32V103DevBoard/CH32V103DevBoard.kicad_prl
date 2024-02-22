@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 0,
-    "active_layer_preset": "All Layers",
+    "active_layer": 37,
+    "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -67,7 +67,7 @@
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "K33b.kicad_prl",
+    "filename": "CH32V103DevBoard.kicad_prl",
     "version": 3
   },
   "project": {
