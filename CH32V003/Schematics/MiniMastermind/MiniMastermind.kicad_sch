@@ -2730,258 +2730,6 @@
 				)
 			)
 		)
-		(symbol "LED:WS2812B"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D1"
-				(at 11.43 3.6479 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "WS2812B"
-				(at 11.43 1.1079 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-				(at 2.54 -9.525 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RGB LED with integrated controller"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "RGB LED NeoPixel addressable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "WS2812B_0_0"
-				(text "RGB"
-					(at 2.286 -4.191 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-			)
-			(symbol "WS2812B_0_1"
-				(polyline
-					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "WS2812B_1_1"
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "DOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -3795,6 +3543,260 @@
 				)
 			)
 		)
+		(symbol "WS2812B_1"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "WS2812B"
+				(at 1.27 -5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WS2812B_1_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "WS2812B_1_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "WS2812B_1_1_1"
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "gkl_power:+5V"
 			(power)
 			(pin_names
@@ -4196,6 +4198,10 @@
 		(uuid "d3217f12-96f6-4fb7-a5ea-33cbfea2fccd")
 	)
 	(no_connect
+		(at 266.7 67.31)
+		(uuid "01bafcd7-016d-4a5d-8b3c-bf746dcb1d3a")
+	)
+	(no_connect
 		(at 48.26 72.39)
 		(uuid "041b6bea-5c08-4a3f-9013-d905675540fc")
 	)
@@ -4230,6 +4236,10 @@
 	(no_connect
 		(at 48.26 82.55)
 		(uuid "b1136367-3c43-43e3-a198-49c42027d111")
+	)
+	(no_connect
+		(at 266.7 64.77)
+		(uuid "b57316a3-61d1-492d-8538-e32a700f8569")
 	)
 	(no_connect
 		(at 57.15 24.13)
@@ -4943,28 +4953,6 @@
 		)
 		(uuid "fcf9b0e6-3250-46fc-b9b0-70e9cd876879")
 	)
-	(global_label "SCL"
-		(shape input)
-		(at 266.7 67.31 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0308fbf2-399f-4587-80ef-7e3bb1e957b4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 273.1928 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "D-"
 		(shape input)
 		(at 208.28 44.45 270)
@@ -4989,7 +4977,7 @@
 	)
 	(global_label "PC4"
 		(shape input)
-		(at 26.67 144.78 0)
+		(at 26.67 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4999,7 +4987,7 @@
 		)
 		(uuid "0f441e2d-b19c-4c8a-89c6-0b0da4a10474")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.4047 144.78 0)
+			(at 33.4047 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5339,28 +5327,6 @@
 			)
 		)
 	)
-	(global_label "SDA"
-		(shape input)
-		(at 266.7 64.77 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8a616cd4-322b-45b8-baf3-b6841d9d7b03")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 273.2533 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PD6"
 		(shape input)
 		(at 248.92 64.77 180)
@@ -5539,7 +5505,7 @@
 	)
 	(global_label "PC3"
 		(shape input)
-		(at 26.67 147.32 0)
+		(at 26.67 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5549,7 +5515,7 @@
 		)
 		(uuid "c3e79d25-dab3-455f-8be2-1b32c5f69c8d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.4047 147.32 0)
+			(at 33.4047 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5895,82 +5861,6 @@
 			(project "MiniMastermind"
 				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
 					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 157.48 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07ea8c33-f0d3-4712-85de-85dbece1437b")
-		(property "Reference" "D4"
-			(at 168.91 127.1621 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 168.91 129.7021 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UL_LED:SK6812-E_Reverse"
-			(at 158.75 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 160.02 140.335 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 157.48 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6e9364ec-a3f2-44e8-b0c1-5c4c2840c4bc")
-		)
-		(pin "2"
-			(uuid "942ecf98-1b5c-4490-afb4-21db81f44aa8")
-		)
-		(pin "3"
-			(uuid "eed9c59e-c05d-454c-bdd0-b22be299f4fa")
-		)
-		(pin "4"
-			(uuid "d327ff7c-4e9c-49c2-b6a3-d54785bcc0e8")
-		)
-		(instances
-			(project "MiniMastermind"
-				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
-					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -6377,6 +6267,83 @@
 			(project "MiniMastermind"
 				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
 					(reference "RN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "WS2812B_1")
+		(lib_id "LED:WS2812B")
+		(at 134.62 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d875ca9-3dff-4a50-b68c-26d7a1079d82")
+		(property "Reference" "D3"
+			(at 146.05 127.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 146.05 129.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "UL_LED:SK6812-E_FaceUp"
+			(at 135.89 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 137.16 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 134.62 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eabc9f48-4ce8-414f-958f-07b1a0b82cb7")
+		)
+		(pin "4"
+			(uuid "65bb86dd-3118-498b-8751-46039d01f1c2")
+		)
+		(pin "3"
+			(uuid "5bbcee00-822b-4709-a8d5-5eaf09c43f6f")
+		)
+		(pin "2"
+			(uuid "e1222ce2-5e2e-443c-9266-52e17d7d3b67")
+		)
+		(instances
+			(project "MiniMastermind"
+				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -6990,82 +6957,6 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 111.76 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "43e277ce-0c4d-4e4c-8fae-92b673c7fd42")
-		(property "Reference" "D2"
-			(at 123.19 127.1621 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 123.19 129.7021 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UL_LED:SK6812-E_Reverse"
-			(at 113.03 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 114.3 140.335 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5f5603ac-c2fe-4c3f-932e-b9a5ce6a2ad3")
-		)
-		(pin "2"
-			(uuid "5dcd6a0d-0bf2-41d8-ba52-477543bb30f6")
-		)
-		(pin "3"
-			(uuid "8cb28e2b-d7d9-4603-9d9a-43878201a1dd")
-		)
-		(pin "4"
-			(uuid "d8ffffa6-9a5b-4272-85af-302f98e5ee94")
-		)
-		(instances
-			(project "MiniMastermind"
-				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 59.69 193.04 0)
 		(unit 1)
@@ -7459,6 +7350,83 @@
 			(project "MiniMastermind"
 				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "WS2812B_1")
+		(lib_id "LED:WS2812B")
+		(at 111.76 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67baf9f2-0aef-4202-8cf9-87c8bf9e4349")
+		(property "Reference" "D2"
+			(at 123.19 127.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 123.19 129.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "UL_LED:SK6812-E_FaceUp"
+			(at 113.03 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 114.3 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 111.76 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52afd6a8-a287-4e06-9c59-1757821f1f26")
+		)
+		(pin "4"
+			(uuid "c2b7c223-fdeb-4ccb-b0f2-95157669dba3")
+		)
+		(pin "3"
+			(uuid "3cda318e-ef08-4558-8ecd-4faac775c907")
+		)
+		(pin "2"
+			(uuid "fb59f0ca-8dc3-473e-8ddb-f2a603a0676a")
+		)
+		(instances
+			(project "MiniMastermind"
+				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -9231,6 +9199,83 @@
 		)
 	)
 	(symbol
+		(lib_name "WS2812B_1")
+		(lib_id "LED:WS2812B")
+		(at 88.9 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d36dc7c5-187f-4025-a575-2d60b9a97196")
+		(property "Reference" "D1"
+			(at 100.33 127.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 100.33 129.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "UL_LED:SK6812-E_FaceUp"
+			(at 90.17 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 91.44 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 88.9 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5291aa7-5feb-4b50-b24c-57175bb08dc1")
+		)
+		(pin "4"
+			(uuid "2d9e01de-75cd-4027-87cf-bef9064334fb")
+		)
+		(pin "3"
+			(uuid "daf9206d-6a31-4d4a-9644-aea1e6bca0fa")
+		)
+		(pin "2"
+			(uuid "06506011-30d6-454e-9f3c-913ea67bc402")
+		)
+		(instances
+			(project "MiniMastermind"
+				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 26.67 185.42 180)
 		(unit 1)
@@ -9495,82 +9540,6 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 134.62 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e6256676-6f04-4675-81c3-62a13f959eeb")
-		(property "Reference" "D3"
-			(at 146.05 127.1621 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 146.05 129.7021 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UL_LED:SK6812-E_Reverse"
-			(at 135.89 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 137.16 140.335 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "05addcaf-85f1-43e9-b7fe-0fe1dee32f33")
-		)
-		(pin "2"
-			(uuid "95f1c90b-b38e-4d40-82fc-eaf6bfd56e77")
-		)
-		(pin "3"
-			(uuid "813d159f-3799-4046-bdab-20cb0f8243ff")
-		)
-		(pin "4"
-			(uuid "05f2cbf2-34f8-40cf-807c-aa5875659330")
-		)
-		(instances
-			(project "MiniMastermind"
-				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 204.47 102.87 90)
 		(unit 1)
@@ -9698,82 +9667,6 @@
 			(project "MiniMastermind"
 				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 88.9 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f078d301-343a-4659-86cc-41b4023ae7c6")
-		(property "Reference" "D1"
-			(at 100.33 127.1621 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 100.33 129.7021 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UL_LED:SK6812-E_Reverse"
-			(at 90.17 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 91.44 140.335 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "31ceb485-285b-4a50-878a-38521ba9cc93")
-		)
-		(pin "2"
-			(uuid "07835db2-1641-4751-90ef-fe6d83438fd8")
-		)
-		(pin "3"
-			(uuid "7703e518-c5d6-43af-8417-0df355d46167")
-		)
-		(pin "4"
-			(uuid "c07077a5-a8b2-4bbe-8772-ff24775f8baf")
-		)
-		(instances
-			(project "MiniMastermind"
-				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -10059,6 +9952,83 @@
 			(project "MiniMastermind"
 				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "WS2812B_1")
+		(lib_id "LED:WS2812B")
+		(at 157.48 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9aae2c7-26c4-4e41-9c00-60781f8a31ef")
+		(property "Reference" "D4"
+			(at 168.91 127.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 168.91 129.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "UL_LED:SK6812-E_FaceUp"
+			(at 158.75 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 160.02 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 157.48 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "280ecb74-05dd-4aa2-95ab-69ad48d741b8")
+		)
+		(pin "4"
+			(uuid "3e7ed754-be60-45a8-8097-6777641105b9")
+		)
+		(pin "3"
+			(uuid "a6f0fba3-c439-476a-a315-beda0e6dc0de")
+		)
+		(pin "2"
+			(uuid "d3156a01-8303-4cfe-8384-e0f9f9a506ab")
+		)
+		(instances
+			(project "MiniMastermind"
+				(path "/6b1ce88e-d492-43bc-a6b6-cc992d7063c2"
+					(reference "D4")
 					(unit 1)
 				)
 			)
