@@ -1,6 +1,4 @@
-# Demo Composite device
+# Notes
 
-Many times it makes sense to have devices that can be multiple devices, i.e. mouse + keyboard, or even keyboard + keyboard if you want to click enough buttons!  (Note: Don't do more than 8 bytes for regular HID payloads otherwise you will crash some people's BIOSes).
-
-This demo presents itself as BOTH a mouse (Actually a tablet) on endpoint 1 *and* a keyboard on endpoint 2.  It moves the cursor in a little box shape and presses 'b' every second or so.
+This example is of a simple joystick/gamepad.  8 buttons, and 2 axes.  So it only needs 2 bytes to represent itself.  It doesn't do anything useful with the inputs, just randomly presses the first butotn and sweeps the X axis stick left to right.
 

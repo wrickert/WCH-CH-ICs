@@ -40,10 +40,94 @@ static const uint8_t device_descriptor[] = {
 	1, //Max number of configurations
 };
 
-static const uint8_t gamepad_hid_desc[] = {  //From http://eleccelerator.com/tutorial-about-usb-hid-report-descriptors/
-HID_USAGE_PAGE ( HID_USAGE_PAGE_DESKTOP     ),
-HID_USAGE      ( HID_USAGE_DESKTOP_GAMEPAD  ),
-HID_COLLECTION ( HID_COLLECTION_PHYSICAL ),
+// Update the HID descriptor for Consumer Control with specific media keys
+static const uint8_t consumer_control_hid_desc[] = {
+    HID_USAGE_PAGE ( HID_USAGE_PAGE_CONSUMER    ), // Consumer Page
+    HID_USAGE      ( HID_USAGE_CONSUMER_CONTROL ),
+    HID_COLLECTION ( HID_COLLECTION_APPLICATION ),
+        HID_LOGICAL_MIN  ( 0x00 ),
+        HID_LOGICAL_MAX  ( 0x01 ),
+        
+        // Media control keys
+        HID_USAGE ( HID_USAGE_CONSUMER_PLAY_PAUSE ),
+        HID_USAGE ( HID_USAGE_CONSUMER_MUTE ),
+        HID_USAGE ( HID_USAGE_CONSUMER_SCAN_PREVIOUS),
+        HID_USAGE ( HID_USAGE_CONSUMER_SCAN_NEXT),
+        HID_REPORT_COUNT ( 4 ),
+        HID_REPORT_SIZE  ( 1 ),
+        HID_INPUT        ( HID_DATA | HID_VARIABLE | HID_ABSOLUTE ),
+        HID_REPORT_COUNT ( 1 ),
+        HID_REPORT_SIZE  ( 4 ), // Padding to make 8 bits in total
+        HID_INPUT        ( HID_CONSTANT ), // Padding
+    HID_COLLECTION_END
+};
+/*
+// Update the HID descriptor for Consumer Control
+static const uint8_t consumer_control_hid_desc[] = {
+    HID_USAGE_PAGE ( HID_USAGE_PAGE_CONSUMER    ), // Consumer Page
+    HID_USAGE      ( HID_USAGE_CONSUMER_CONTROL ),
+    HID_COLLECTION ( HID_COLLECTION_APPLICATION ),
+        HID_LOGICAL_MIN  ( 0x00 ),
+        HID_LOGICAL_MAX  ( 0x01 ),
+        
+        // Volume controls
+        HID_USAGE ( HID_USAGE_CONSUMER_VOLUME_INCREMENT ),
+        HID_USAGE ( HID_USAGE_CONSUMER_VOLUME_DECREMENT ),
+        HID_REPORT_COUNT ( 2 ),
+        HID_REPORT_SIZE  ( 1 ),
+        HID_INPUT        ( HID_DATA | HID_VARIABLE | HID_ABSOLUTE ),
+        HID_REPORT_COUNT ( 1 ),
+        HID_REPORT_SIZE  ( 6 ), // Padding to make 8 bits in total
+        HID_INPUT        ( HID_CONSTANT ), // Padding
+        
+        // Playback controls
+        HID_USAGE_PAGE   ( HID_USAGE_PAGE_CONSUMER ),
+        HID_USAGE_MIN    ( HID_USAGE_CONSUMER_SCAN_NEXT),
+        HID_USAGE_MAX    ( HID_USAGE_CONSUMER_PLAY_PAUSE ),
+        HID_LOGICAL_MIN  ( 0x00 ),
+        HID_LOGICAL_MAX  ( 0x01 ),
+        HID_REPORT_COUNT ( 2 ),
+        HID_REPORT_SIZE  ( 1 ),
+        HID_INPUT        ( HID_DATA | HID_VARIABLE | HID_ABSOLUTE ),
+        HID_REPORT_COUNT ( 1 ),
+        HID_REPORT_SIZE  ( 6 ), // Padding
+        HID_INPUT        ( HID_CONSTANT ), // Padding
+    HID_COLLECTION_END
+};
+
+*/
+/*
+static const uint8_t consumer_hid_desc[] = {  //From http://eleccelerator.com/tutorial-about-usb-hid-report-descriptors/
+	HID_USAGE_PAGE ( HID_USAGE_PAGE_CONSUMER     ),
+	HID_USAGE      ( HID_USAGE_CONSUMER_CONTROL  ),
+	HID_COLLECTION ( HID_COLLECTION_APPLICATION ),
+	HID_USAGE_PAGE   ( HID_USAGE_PAGE_BUTTON                  ),
+	//HID_USAGE_PAGE   ( HID_USAGE_PAGE_CONSUMER                  ),
+   //HID_USAGE        ( HID_USAGE_CONSUMER_MUTE                ),
+	HID_USAGE_MIN    ( 1                                      ),
+	HID_USAGE_MAX    ( 0x0C                                      ),
+	HID_LOGICAL_MIN  ( 0                                      ),
+	HID_LOGICAL_MAX  ( 1                                      ),
+	HID_REPORT_COUNT ( 96                                      ),
+	HID_REPORT_SIZE  ( 1                                      ),
+	HID_INPUT        ( 0x03 ),
+	//HID_INPUT        ( HID_DATA | HID_VARIABLE | HID_ABSOLUTE ),
+HID_COLLECTION_END
+};
+*/
+
+   /*
+        HID_REPORT_ID( 1 )
+        HID_LOGICAL_MIN( 0x00 ),
+        HID_LOGICAL_MAX( 0x7F ),
+        HID_USAGE( HID_USAGE_CONSUMER_MUTE),
+        HID_LOGICAL_MIN( 0x00),
+        HID_LOGICAL_MAX( 0x01),
+        HID_REPORT_SIZE( 1 ),
+        HID_REPORT_COUNT( 1 ),
+        HID_INPUT( HID_DATA | HID_VARIABLE | HID_ABSOLUTE | HID_PREFERRED_STATE | HID_NULL_STATE ),
+    HID_COLLECTION_END
+};
 	//HID_REPORT_ID( 1 )
 	HID_USAGE_PAGE   ( HID_USAGE_PAGE_DESKTOP                 ),
 	HID_LOGICAL_MIN  ( 0x81                                   ),
@@ -63,6 +147,7 @@ HID_COLLECTION ( HID_COLLECTION_PHYSICAL ),
 	HID_INPUT        ( HID_DATA | HID_VARIABLE | HID_ABSOLUTE ),
 HID_COLLECTION_END
 };
+*/
 
 static const uint8_t config_descriptor[] = {
 	// configuration descriptor, USB spec 9.6.3, page 264-266, Table 9-10
@@ -88,11 +173,11 @@ static const uint8_t config_descriptor[] = {
 
 	9,                        // bLength
 	HID_DESC_TYPE_HID,        // bDescriptorType (HID)
-	0x10,0x01,                // bcd 1.10
+	0x11,0x01,                // bcd 1.10
 	0x00,                     //country code
 	0x01,                     // Num descriptors
 	HID_DESC_TYPE_REPORT,     // DescriptorType[0] (HID)
-	sizeof(gamepad_hid_desc), 0x00,     // Descriptor length XXX This looks wrong!!!
+	sizeof(consumer_control_hid_desc), 0x00,     // Descriptor length XXX This looks wrong!!!
 
 	7,                        // endpoint descriptor (For endpoint 1)
 	TUSB_DESC_ENDPOINT,       // Endpoint Descriptor (Must be 5)
@@ -150,7 +235,8 @@ const static struct descriptor_list_struct {
 	{0x00000100, device_descriptor, sizeof(device_descriptor)},
 	{0x00000200, config_descriptor, sizeof(config_descriptor)},
 	// interface number // 2200 for hid descriptors.
-	{0x00002200, gamepad_hid_desc, sizeof(gamepad_hid_desc)},
+//	{0x00002200, consumer_hid_desc, sizeof(consumer_hid_desc)},
+	{0x00002200, consumer_control_hid_desc, sizeof(consumer_control_hid_desc)},
 	{0x00002100, config_descriptor + 18, 9 }, // Not sure why, this seems to be useful for Windows + Android.
 
 	{0x00000300, (const uint8_t *)&string0, 4},
