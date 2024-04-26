@@ -6,6 +6,15 @@
 
 uint32_t  timer = 0;
 #define DEBOUNCE_TIME 50 // Debounce time in milliseconds
+uint8_t buttons = 0;
+
+// Define states for the state machine
+typedef enum {
+    RELEASED,
+    MAYBE_PRESSED,
+    PRESSED,
+    MAYBE_RELEASED
+} ButtonState;
 
 int main()
 {
@@ -22,12 +31,63 @@ int main()
    funDigitalWrite( PD7, true);
    funPinMode( PA1, GPIO_CFGLR_IN_PUPD);
    funDigitalWrite( PA1, true);
-	while(1);
+   
+   static uint32_t lastTimer = 0;
+     
+    ButtonState currentState = RELEASED;
+    bool buttonPressed = false;
+
+	while(1){
+		bool buttonState = !funDigitalRead(PD5);         
+
+
+        // State machine logic
+        switch (currentState) {
+            case RELEASED:
+                if (buttonState) {
+                    currentState = MAYBE_PRESSED;
+							Delay_Ms(1000);
+                }
+                break;
+            case MAYBE_PRESSED:
+                if (buttonState) {
+                    currentState = PRESSED;
+                    buttonPressed = true;
+                } else {
+                    currentState = RELEASED;
+                }
+                break;
+            case PRESSED:
+                if (!buttonState) {
+                    currentState = MAYBE_RELEASED;
+							Delay_Ms(1000);
+                }
+                break;
+            case MAYBE_RELEASED:
+                if (!buttonState) {
+                    currentState = RELEASED;
+                    buttonPressed = false;
+                } else {
+                    currentState = PRESSED;
+                }
+                break;
+        }
+
+        // Button action when pressed
+        if (buttonPressed) {
+
+         buttons |= 0b10000000;
+			}
+
+			Delay_Ms(12600);
+}
+       
+
+   }
 }
 
 void usb_handle_user_in_request( struct usb_endpoint * e, uint8_t * scratchpad, int endp, uint32_t sendtok, struct rv003usb_internal * ist )
 {
-    static uint32_t lastTimer = 0;
 
 	if (endp ==1) {
 		// If it's a data endpoint (not control), handle consumer control data
@@ -37,28 +97,21 @@ void usb_handle_user_in_request( struct usb_endpoint * e, uint8_t * scratchpad, 
 		// Modify consumer_data array to represent consumer control data
 		// For example, to adjust volume, you would change the second byte (0x00) to represent the volume level
 		
-      if(!funDigitalRead(PD5)){
-			if( timer - lastTimer > DEBOUNCE_TIME){
-				lastTimer = timer;
+      if(buttons & 0b10000000){
 				consumer_data[0] = 0x01;
-			}
 		}
-      else if(!funDigitalRead(PD6)){// && lastTimer - timer > DEBOUNCE_TIME){
-			//lastTimer = timer;
+      else if(buttons & 0b01000000){
          consumer_data[0] = 0x02;
 		}	
-      else if(!funDigitalRead(PD7)){ //&& lastTimer - timer > DEBOUNCE_TIME){
-			//lastTimer = timer;
+      else if(buttons & 0b00100000){
          consumer_data[0] = 0x04;
 		}	
-      else if(!funDigitalRead(PA1) ){//&& lastTimer - timer > DEBOUNCE_TIME){
-			//lastTimer = timer;
+      else if(buttons & 0b00010000){
          consumer_data[0] = 0x08;
 		}	
 		else{
 			consumer_data[0] = 0x00;
-			timer++;
-
+         buttons = 0;
 		}
 	
 		// Send consumer data
