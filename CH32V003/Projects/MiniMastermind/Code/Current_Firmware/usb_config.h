@@ -51,13 +51,14 @@ static const uint8_t consumer_control_hid_desc[] = {
         // Media control keys
         HID_USAGE ( HID_USAGE_CONSUMER_PLAY_PAUSE ),
         HID_USAGE ( HID_USAGE_CONSUMER_MUTE ),
+        HID_USAGE ( HID_USAGE_CONSUMER_SCAN_NEXT),
         HID_USAGE ( HID_USAGE_CONSUMER_SCAN_PREVIOUS),
         HID_USAGE ( HID_USAGE_CONSUMER_SCAN_NEXT),
-        HID_REPORT_COUNT ( 4 ),
+        HID_REPORT_COUNT ( 5 ),
         HID_REPORT_SIZE  ( 1 ),
         HID_INPUT        ( HID_DATA | HID_VARIABLE | HID_ABSOLUTE ),
         HID_REPORT_COUNT ( 1 ),
-        HID_REPORT_SIZE  ( 4 ), // Padding to make 8 bits in total
+        HID_REPORT_SIZE  ( 3 ), // Padding to make 8 bits in total
         HID_INPUT        ( HID_CONSTANT ), // Padding
     HID_COLLECTION_END
 };
