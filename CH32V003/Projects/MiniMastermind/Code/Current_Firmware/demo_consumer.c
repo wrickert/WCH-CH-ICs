@@ -85,6 +85,7 @@ void usb_handle_user_in_request( struct usb_endpoint * e, uint8_t * scratchpad, 
          buttons = 0;
       }
       //Forward
+      // This works
       else if(buttons == 4){
          consumer_data[0] = 0x04;
          buttons = 0;
