@@ -1,0 +1,124 @@
+
+demo_composite_hid.elf:     file format elf32-littleriscv
+
+SYMBOL TABLE:
+00000000 l    d  .init	00000000 .init
+000000a0 l    d  .text	00000000 .text
+0000091c l    d  .fini	00000000 .fini
+20000000 l    d  .dalign	00000000 .dalign
+0000091c l    d  .dlalign	00000000 .dlalign
+20000000 l    d  .data	00000000 .data
+20000000 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loclists	00000000 .debug_loclists
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_rnglists	00000000 .debug_rnglists
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_line_str	00000000 .debug_line_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+20000008 l     O .bss	00000004 tsajoystick.1
+20000000 l     O .bss	00000008 tsajoystick.0
+000008bc l     O .text	00000060 descriptor_list
+000007dc l     O .text	0000000a string3
+000007e8 l     O .text	00000014 string2
+000007fc l     O .text	00000010 string1
+0000080c l     O .text	00000004 string0
+00000810 l     O .text	0000003f keyboard_hid_desc
+00000850 l     O .text	0000001b consumer_hid_desc
+0000086c l     O .text	0000003b config_descriptor
+000008a8 l     O .text	00000012 device_descriptor
+00000000 l    df *ABS*	00000000 ccreVcRg.o
+0000063c l       .text	00000000 handle_se0_keepalive
+00000448 l       .text	00000000 syncout
+00000450 l       .text	00000000 preamble_loop
+000005da l       .text	00000000 done_usb_message
+00000474 l       .text	00000000 done_preamble
+00000480 l       .text	00000000 packet_type_loop
+000004cc l       .text	00000000 data_crc
+000004cc l       .text	00000000 is_end_of_byte
+000004d4 l       .text	00000000 bit_process
+00000508 l       .text	00000000 handle_one_bit
+000004e0 l       .text	00000000 handle_zero_bit
+0000055c l       .text	00000000 se0_complete
+00000530 l       .text	00000000 handle_bit_stuff
+00000540 l       .text	00000000 not_is_end_of_byte_and_bit_stuffed
+000005da l       .text	00000000 done_usb_message_in
+0000060a l       .text	00000000 usb_pid_handle_ack
+000005b2 l       .text	00000000 crc_for_tokens_would_be_bad_maybe_data
+00000584 l       .text	00000000 may_be_a_token
+0000059c l       .text	00000000 yes_check_tokens
+00000638 l       .text	00000000 usb_pid_handle_out
+00000622 l       .text	00000000 usb_pid_handle_setup
+000005e6 l       .text	00000000 ret_from_se0
+000005f2 l       .text	00000000 interrupt_complete
+000006ee l       .text	00000000 done_poly_check
+00000700 l       .text	00000000 pre_and_tok_send_inner_loop
+00000710 l       .text	00000000 pre_and_tok_send_one_bit
+00000720 l       .text	00000000 pre_and_tok_done_sending_data
+0000078c l       .text	00000000 no_really_done_sending_data
+0000072e l       .text	00000000 done_poly_check2
+00000730 l       .text	00000000 load_next_byte
+00000734 l       .text	00000000 send_inner_loop
+00000750 l       .text	00000000 send_zero_bit
+000007c4 l       .text	00000000 insert_stuffed_bit
+00000768 l       .text	00000000 cont_after_jump
+00000768 l       .text	00000000 send_end_bit_complete
+00000778 l       .text	00000000 done_sending_data
+0000069c g       .text	00000000 usb_send_empty
+20000800 g       .data	00000000 __global_pointer$
+0000011a g     F .text	00000002 TIM1_CC_IRQHandler
+0000011a g     F .text	00000002 HardFault_Handler
+0000011a g     F .text	00000002 SysTick_Handler
+0000011a g     F .text	00000002 PVD_IRQHandler
+0000011c g     F .text	0000000e NMI_Handler
+000010fa  w      .debug_info	00000000 .hidden ch32v003fun.c.dabff922
+00000000 g     F .init	0000009c InterruptVectorDefault
+20000000 g       .bss	00000000 _sbss
+00000000 g     F .init	0000009c InterruptVector
+000000a0 g       .init	00000000 _einit
+00002335  w      .debug_info	00000000 .hidden rv003usb.c.46bf26f4
+0000011a g     F .text	00000002 SPI1_IRQHandler
+0000011a g     F .text	00000002 AWU_IRQHandler
+000003e0 g       .text	00000000 EXTI7_0_IRQHandler
+0000034a g     F .text	00000094 usb_pid_handle_data
+0000011a g     F .text	00000002 DMA1_Channel4_IRQHandler
+0000011a g     F .text	00000002 ADC1_IRQHandler
+20000088 g       .bss	00000000 _ebss
+0000011a g     F .text	00000002 DMA1_Channel7_IRQHandler
+0000011a g     F .text	00000002 I2C1_EV_IRQHandler
+0000011a g     F .text	00000002 DMA1_Channel6_IRQHandler
+0000011a g     F .text	00000002 RCC_IRQHandler
+0000011a g     F .text	00000002 TIM1_TRG_COM_IRQHandler
+0000011a g     F .text	00000002 DMA1_Channel1_IRQHandler
+0000011a g     F .text	00000002 DefaultIRQHandler
+20000000 g       .dalign	00000000 _data_vma
+000007d8 g       .text	00000000 always0
+0000011c g     F .text	0000000e NMI_RCC_CSS_IRQHandler
+00001ed0  w      .debug_info	00000000 .hidden demo_composite_hid.c.108de4e3
+0000018c g     F .text	000000e4 main
+0000011a g     F .text	00000002 DMA1_Channel5_IRQHandler
+0000012a g     F .text	00000062 SystemInit
+00000000 g       .init	00000000 _sinit
+0000011a g     F .text	00000002 DMA1_Channel3_IRQHandler
+00000270 g     F .text	000000da usb_pid_handle_in
+0000011a g     F .text	00000002 TIM1_UP_IRQHandler
+0000011a g     F .text	00000002 WWDG_IRQHandler
+0000011a g     F .text	00000002 TIM2_IRQHandler
+20000800 g       .bss	00000000 _eusrstack
+0000011a g     F .text	00000002 SW_Handler
+0000011a g     F .text	00000002 TIM1_BRK_IRQHandler
+000006aa g       .text	00000000 usb_send_data
+20000000 g       .data	00000000 _edata
+0000091c g       .dlalign	00000000 _data_lma
+2000000c g     O .bss	0000007c rv003usb_internal_data
+0000011a g     F .text	00000002 DMA1_Channel2_IRQHandler
+000000a0 g     F .text	0000007a handle_reset
+0000011a g     F .text	00000002 FLASH_IRQHandler
+0000011a g     F .text	00000002 USART1_IRQHandler
+0000011a g     F .text	00000002 I2C1_ER_IRQHandler
+
+
